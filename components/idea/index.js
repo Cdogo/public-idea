@@ -24,9 +24,9 @@ const IdeaFooter = ({id, timeCreated}) => {
         </>
     )
 }
-const Tag = ({index}) => {
+const Tag = ({key, index}) => {
     return(<>
-    <span key = {index} className = {styles.tags}>{{
+    <span key = {key} className = {styles.tags}>{{
         "1": "💻Coding/App",
         "2": "🎶Music/Song",
         "3": "🎨Art/Design",
@@ -41,7 +41,7 @@ export default function Idea({id, title, tags, content, timeCreated}){
             <h1 className = {styles.title}>{title}</h1>
             <div className = {styles.tags}>
                 <h4 className = {styles.tags}>Tags: </h4>
-                {tags && tags.map(i => <Tag index = {i}/>)}
+                {tags && tags.map(i => <Tag key = {i} index = {i}/>)}
             </div>
             <p className = {styles.content}>{content}</p>
             <IdeaFooter id = {id} timeCreated = {timeCreated}/>
