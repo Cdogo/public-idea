@@ -26,7 +26,7 @@ const IdeaFooter = ({id, timeCreated}) => {
 }
 const Tag = ({index}) => {
     return(<>
-    <span className = {styles.tags}>{{
+    <span key = {index} className = {styles.tags}>{{
         "1": "💻Coding/App",
         "2": "🎶Music/Song",
         "3": "🎨Art/Design",
