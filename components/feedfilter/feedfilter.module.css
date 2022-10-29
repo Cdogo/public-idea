@@ -1,0 +1,23 @@
+#Filter{
+    --height: 3em;
+    max-width: min(100%, 800px);
+    height: var(--height);
+    background-color: lightgrey;
+    border-radius: calc(var(--height) / 2);
+}
+.NotClicked{
+    animation: Rotate 0.15s ease reverse;
+    transform: rotate(0deg);
+}
+.Clicked{
+    animation: Rotate 0.15s ease;
+    transform: rotate(180deg);
+}
+@keyframes Rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}

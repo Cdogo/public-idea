@@ -3,7 +3,7 @@
     border-radius: 20px;
     padding: 1em;
     transition: color 0.15s ease, border-color 0.15s ease;
-    max-width: min(80vw, 700px);
+    max-width: min(100%, 800px);
 }
 .idea:hover,
 .idea:focus,
@@ -18,7 +18,10 @@
     cursor:pointer;
 }
 div.tags{
+    padding: 0.3em 0 0.3em 0;
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
     column-gap: 10px;
 }
 h4.tags{
@@ -62,15 +65,17 @@ div.favorite{
     display: flex;
     align-items: center; 
     margin: 0;
-    cursor: pointer;
     transition: fill 0.15s ease;
 }
 p.favorite{
     margin: 0;
     color: black;
 }
-.favorite:hover,
-.favorite:focus,
-.favorite:active {
+svg.favorite{
+    cursor: pointer;
+}
+svg.favorite:hover,
+svg.favorite:focus,
+svg.favorite:active {
   fill: #ffdf00; 
 }

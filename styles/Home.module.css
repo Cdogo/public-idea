@@ -1,5 +1,7 @@
 .container {
-  padding: 0 2rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main {
@@ -108,10 +110,13 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: calc(700px + 2em)) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .container{
+    padding: 0 2em;
   }
 }
 

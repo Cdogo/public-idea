@@ -1,0 +1,7 @@
+#feed{
+    max-width: min(100%, 800px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    margin: auto;
+}
