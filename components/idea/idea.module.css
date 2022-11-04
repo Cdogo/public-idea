@@ -3,7 +3,7 @@
     border-radius: 20px;
     padding: 1em;
     transition: color 0.15s ease, border-color 0.15s ease;
-    max-width: min(100%, 800px);
+    width: min(calc(100vw - 4em), 800px);
 }
 .idea:hover,
 .idea:focus,

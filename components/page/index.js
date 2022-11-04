@@ -8,8 +8,8 @@ export default function Page({ children }) {
     return (
         <>
         <Head>
-            <title>Public Idea</title>
-            <meta name="description" content="Public Idea a place to share ideas that you don't know how to do." />
+            <title>John's app</title>
+            <meta name="description" content="John's app" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <Header/>

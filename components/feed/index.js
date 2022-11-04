@@ -7,6 +7,6 @@ export default function Feed(){
     return(
     <div id = {styles.feed}>
         <FeedFilter/>
-        <IdeaFeed/>
+        <IdeaFeed filters = {null}/>
     </div>);
 }

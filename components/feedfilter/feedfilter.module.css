@@ -1,6 +1,6 @@
 #Filter{
     --height: 3em;
-    max-width: min(100%, 800px);
+    width: min(calc(100vw - 4em), 800px);
     height: var(--height);
     background-color: lightgrey;
     border-radius: calc(var(--height) / 2);
